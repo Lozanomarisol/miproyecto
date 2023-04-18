@@ -1,0 +1,76 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8>
+  <meta name="Description" content="Mi primer Formulario">
+  <meta name="author" content="LOZANO MARISOL">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="FORMULARIO,Lozano">
+  
+  <title>Lozano Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="envio.php" method="post" target="_blank"></form>
+    <p>
+        <label for="nombre"> <strong>Nombre:</strong></label>
+        <input type="text" id="nombre" size="40" name="nombre"
+        placeholder="Introduce tu nombre" required>
+        <small>Obligatorio</small>
+        
+    </p>
+<p>
+    <label for="contraseña"> <strong>Contraseña:</strong></label>
+    <input type="password" id="password" size="10"
+    name="contraseña" placeholder="Introduce tu contraseña" maxlength="10" minlength="4">
+</p>
+<p>
+    <label for="correo">Correo</label>
+    <input type="email" id="correo" name="correo">
+</p>
+<p>
+    <label for="numero">Número</label>
+    <input type="number" id="numero" name="Telefono"
+    min="1" max="20" step="1">
+</p>
+<p> <label for="fecha">Fecha de nacimiento</label>
+<input type="date" id="fecha" name="fecha" max="15-04-2023">
+</p>
+<p>
+    <input type="submit" value="Enviar datos">
+    <input type="reset" value="Reiniciar datos">
+</p> 
+<br>
+<label for="País">País de nacimiento:</label>
+<select name="País" id="País">
+    <optgroup label="América">
+    <option value="----">----</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Brasil">Brasil</option>
+    <option value="Chile">Chile</option>
+    <option value="Bolivia">Bolivia</option>
+    </optgroup>
+    <optgroup label="Europa">
+        <option value="----">----</option>
+        <option value="España">España</option>
+        <option value="Londres">Londres</option>
+        <option value="Francia">Francia</option>
+    </optgroup>
+    
+    </select>
+<br>
+<br>
+<p><label for="genero">Género:</label>
+<input type="radio" name="genero" value="Femenino"> Femenino
+<input type="radio" name="genero" value="Masculino"> MAsculino
+</p>
+<label for="Idioma">Selecciona tu/tus idioma/idiomas:</label>
+<p>
+    <input type="checkbox" name="Idioma" value="Español"> Español
+    <input type="checkbox" name="Idioma" value="Ingles"> Inglés
+    <input type="checkbox" name="Idioma" value="Frances"> Francés
+    <input type="checkbox" name="Idioma" value="Italiano"> Italiano
+
+</p>
+<p>
+    <label for="observaciones">Observaciones</label>
+    <textarea name="Observaciones" id="observaciones" cols="150" rows="10"></textarea>
